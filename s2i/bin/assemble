@@ -7,7 +7,7 @@ echo "---> Installing application source..."
 
 mv /tmp/src/* ./
 
-curl -O moodle.tar.gz https://download.moodle.org/download.php/stable33/moodle-latest-33.tgz
+curl -o moodle.tar.gz https://download.moodle.org/download.php/direct/stable33/moodle-latest-33.tgz
 tar xvf moodle.tar.gz
 rm moodle.tar.gz
 mv moodle/* ./
