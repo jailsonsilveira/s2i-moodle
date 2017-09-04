@@ -3,13 +3,10 @@
 shopt -s dotglob
 echo "---> Downloading and installing moodle"
 
-mv /tmp/src/* ./
-
 curl --silent -o moodle.tar.gz https://github.com/moodle/moodle/archive/MOODLE_33_STABLE.tar.gz
 tar xvf moodle.tar.gz
-rm moodle.tar.gz
-mv moodle/* ./
-mv /tmp/src/config.php ./config
+rm -v moodle.tar.gz; mv moodle-*/* ./; rm -rf moodle-*
+mv -v /tmp/src/config.php ./config.php
 
 # Fix source directory permissions
 fix-permissions ./
