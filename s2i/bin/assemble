@@ -1,0 +1,17 @@
+#!/bin/bash
+
+set -e
+
+shopt -s dotglob
+echo "---> Installing application source..."
+
+mv /tmp/src/* ./
+
+curl -O moodle.tar.gz https://download.moodle.org/download.php/stable33/moodle-latest-33.tgz
+tar xvf moodle.tar.gz
+rm moodle.tar.gz
+mv moodle/* ./
+mv /tmp/src/config.php ./config
+
+# Fix source directory permissions
+fix-permissions ./
