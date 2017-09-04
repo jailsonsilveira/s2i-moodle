@@ -5,7 +5,7 @@ echo "---> Downloading and installing moodle"
 
 mv /tmp/src/* ./
 
-curl -o moodle.tar.gz https://download.moodle.org/download.php/direct/stable33/moodle-latest-33.tgz
+curl --progress-bar -o moodle.tar.gz https://download.moodle.org/download.php/direct/stable33/moodle-latest-33.tgz
 tar xvf moodle.tar.gz
 rm moodle.tar.gz
 mv moodle/* ./
