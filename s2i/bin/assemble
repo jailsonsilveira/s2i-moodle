@@ -1,7 +1,7 @@
 #!/bin/bash
 
 shopt -s dotglob
-echo "---> Installing application source..."
+echo "---> Downloading and installing moodle"
 
 mv /tmp/src/* ./
 
