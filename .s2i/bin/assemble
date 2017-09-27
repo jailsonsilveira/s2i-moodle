@@ -3,7 +3,7 @@
 shopt -s dotglob
 echo "---> Downloading and installing moodle"
 
-curl --silent -o moodle.tar.gz https://codeload.github.com/moodle/moodle/tar.gz/MOODLE_33_STABLE
+curl --silent -o moodle.tar.gz https://github.com/moodle/moodle/archive/v3.3.2.tar.gz
 tar xvf moodle.tar.gz
 rm -v moodle.tar.gz; mv moodle-*/* ./; rm -rf moodle-*
 mv -v /tmp/src/config.php ./config.php
