@@ -3,7 +3,7 @@
 shopt -s dotglob
 echo "---> Downloading and installing moodle"
 
-curl --silent -Lo moodle.tar.gz https://github.com/moodle/moodle/archive/v3.3.6.tar.gz
+curl --silent -Lo moodle.tar.gz https://github.com/moodle/moodle/archive/v3.6.2.tar.gz
 
 tar xvf moodle.tar.gz
 rm -v moodle.tar.gz; mv moodle-*/* ./; rm -rf moodle-*
